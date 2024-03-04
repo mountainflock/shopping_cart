@@ -1,0 +1,93 @@
+.card-list {
+  display: flex;
+  flex-direction: row;
+  margin: 60px 40px;
+  height: 40vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Cutive Mono", monospace;
+  height: 100%;
+  padding: 20px;
+  gap: 10px;
+}
+
+.image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+
+.card-image {
+  width: 30%;
+}
+
+.card-image:hover {
+  width: 35%;
+}
+
+.card-title {
+  text-wrap: wrap;
+}
+
+.price-div {
+  display: flex;
+  justify-content: center;
+  height: 10%;
+}
+
+.quantity-form {
+  height: 20%;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.quantity {
+  appearance: textfield;
+  width: 20px;
+  text-align: center;
+  /* border: none; */
+}
+
+.quantity::-webkit-inner-spin-button,
+.quantity::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+.add-to-cart-button {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 6px;
+  margin: 0 4px;
+}
+
+.add-to-cart-button:hover {
+  background-color: rgb(206, 206, 206);
+  color: black;
+}
+
+.increase-button,
+.decrease-button {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+  margin: 0 2px;
+}
+
+.increase-button:hover,
+.decrease-button:hover {
+  background-color: rgb(233, 230, 230);
+}
