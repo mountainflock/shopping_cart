@@ -1,0 +1,22 @@
+.home {
+  color: rgb(79, 79, 79);
+}
+
+.main-image {
+  width: 100vw;
+  height: 70vh;
+}
+
+.logo-text {
+  font-size: 40px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: rgb(79, 79, 79);
+  padding: 10px 0 10px 10px;
+}
+
+.home-text {
+  font-size: 20px;
+  font-family: "Cutive Mono", monospace;
+  color: rgb(132, 132, 132);
+  padding: 0 0 20px 10px;
+}
