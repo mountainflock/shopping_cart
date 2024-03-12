@@ -1,20 +1,17 @@
-import { useState } from "react";
-
+// import { useState } from "react";
 import "./card.css";
 import ProductInput from "./ProductInput";
 
-const Card = ({ id, title, image, price, handleAddToCart }) => {
-  const [quantity, setQuantity] = useState(1);
-
+const Card = ({ id, title, image, price, addProductToShoppingCart }) => {
   const handleAddToCartButtonClick = (e) => {
     e.preventDefault();
     const newProduct = { id, title, image, price, quantity: quantity };
-    handleAddToCart({ ...newProduct, quantity: quantity });
+    addProductToShoppingCart({ ...newProduct, quantity: quantity });
   };
 
   const handleIncreaseButtonClick = (e) => {
     e.preventDefault();
-    setQuantity(quantity + 1);
+    addProductToShoppingCart(id);
   };
 
   const handleDecreaseButtonClick = (e) => {
