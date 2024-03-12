@@ -11,7 +11,6 @@ export const ShopContext = createContext({
 export const ShopContextProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
   const [shoppingCart, setShoppingCart] = useState([]);
-  const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products/category/jewelery")
@@ -52,7 +51,6 @@ export const ShopContextProvider = ({ children }) => {
       value={{
         products,
         shoppingCart,
-        quantity,
         addProductToShoppingCart,
         removeProductFromShoppingCart,
         clearShoppingCart,
