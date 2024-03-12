@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import "./card.css";
 import ProductInput from "./ProductInput";
+import { ShopContext } from "./ShopContextProvider";
 
-const Card = ({ id, title, image, price, addProductToShoppingCart }) => {
+const Card = ({ id, title, image, price }) => {
+  const { addProductToShoppingCart } = useContext(ShopContext);
   const [quantity, setQuantity] = useState(1);
+
   const handleAddToCartButtonClick = (e) => {
     e.preventDefault();
     const newProduct = { id, title, image, price, quantity: quantity };
