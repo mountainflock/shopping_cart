@@ -10,6 +10,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import ShopPage from "./pages/ShopPage";
 import Navigation from "./components/Navigation";
+// import ShoppingCart from "./components/ShoppingCart";
 
 function App() {
   return (
