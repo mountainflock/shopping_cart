@@ -15,7 +15,7 @@ const Card = ({ id, title, image, price }) => {
 
   const handleIncreaseButtonClick = (e) => {
     e.preventDefault();
-    addProductToShoppingCart(id);
+    setQuantity(quantity + 1);
   };
 
   const handleDecreaseButtonClick = (e) => {

@@ -39,7 +39,9 @@ export const ShopContextProvider = ({ children }) => {
   };
 
   const removeProductFromShoppingCart = (id) => {
-    setShoppingCart(shoppingCart.filter((product) => product.id !== id));
+    setShoppingCart(
+      shoppingCart.filter((product) => product.productId.id !== id)
+    );
   };
 
   const clearShoppingCart = () => {
