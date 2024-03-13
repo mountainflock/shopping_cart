@@ -1,24 +1,25 @@
 import { useContext } from "react";
 import { ShopContext } from "./ShopContextProvider";
+import "./shoppingCartItem.css";
 
 const ShoppingCartItem = ({ id, title, price, quantity }) => {
   const { removeProductFromShoppingCart } = useContext(ShopContext);
 
-  const handleDeleteProductButtonClick = () => {
-    removeProductFromShoppingCart(id);
-  };
-
   return (
     <div className="shopping-cart-item">
-      <p>{title}</p>
-      <p>amount: {quantity}</p>
+      <p className="shopping-cart-item-title">{title}</p>
       <p>price: ${price}</p>
-      <button
-        className="delete-product-button"
-        onClick={() => handleDeleteProductButtonClick(id)}
-      >
-        <span className="material-symbols-rounded">delete</span>
-      </button>
+      <p>amount: {quantity}</p>
+
+      <p>
+        sum: ${price * quantity}
+        <button
+          className="delete-product-button"
+          onClick={() => removeProductFromShoppingCart(id)}
+        >
+          <span className="material-symbols-rounded">delete</span>
+        </button>
+      </p>
     </div>
   );
 };

@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: space-between;
   font-family: "Cutive Mono", monospace;
-  height: 100%;
+  height: 400px;
   padding: 20px;
   gap: 10px;
 }
@@ -32,6 +32,7 @@
 
 .card-title {
   text-wrap: wrap;
+  margin: 20px 0;
 }
 
 .price-div {
@@ -59,19 +60,24 @@
   /* border: none; */
 }
 
+.quantity-input {
+  align-self: center;
+}
+
 .quantity::-webkit-inner-spin-button,
 .quantity::-webkit-outer-spin-button {
   appearance: none;
 }
 
 .add-to-cart-button {
-  background-color: black;
+  background-color: rgb(34, 34, 34);
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 4px;
   font-size: 12px;
   padding: 6px;
-  margin: 0 4px;
+  margin: 10px 0;
+  width: 100%;
 }
 
 .add-to-cart-button:hover {

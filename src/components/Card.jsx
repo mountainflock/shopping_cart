@@ -9,8 +9,8 @@ const Card = ({ id, title, image, price }) => {
 
   const handleAddToCartButtonClick = (e) => {
     e.preventDefault();
-    const newProduct = { id, title, image, price, quantity: quantity };
-    addProductToShoppingCart({ ...newProduct, quantity: quantity });
+    const newProductId = { id, title, image, price, quantity: quantity };
+    addProductToShoppingCart(newProductId, quantity);
   };
 
   const handleIncreaseButtonClick = (e) => {
@@ -20,7 +20,7 @@ const Card = ({ id, title, image, price }) => {
 
   const handleDecreaseButtonClick = (e) => {
     e.preventDefault();
-    if (quantity === 0) return;
+    if (quantity === 1) return;
     setQuantity(quantity - 1);
   };
 
@@ -45,8 +45,8 @@ const Card = ({ id, title, image, price }) => {
         />
         <div>
           <button
-            onClick={handleAddToCartButtonClick}
             className="add-to-cart-button"
+            onClick={handleAddToCartButtonClick}
           >
             ADD TO CART
           </button>
