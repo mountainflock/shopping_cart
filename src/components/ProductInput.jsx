@@ -1,6 +1,3 @@
-// import { useContext } from "react";
-// import { ShopContext } from "./ShopContextProvider";
-
 const ProductInput = ({
   quantity,
   handleDecreaseButtonClick,

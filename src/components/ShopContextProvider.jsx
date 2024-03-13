@@ -20,20 +20,23 @@ export const ShopContextProvider = ({ children }) => {
       });
   }, []);
 
-  const addProductToShoppingCart = (newProductId) => {
+  const addProductToShoppingCart = (newProductId, newQuantity) => {
     const productIndex = shoppingCart.findIndex(
-      ({ productId }) => productId === newProductId
+      ({ productId }) => productId.id === newProductId.id
     );
     if (productIndex !== -1) {
       const firstPart = shoppingCart.slice(0, productIndex);
       const secondPart = shoppingCart.slice(productIndex + 1);
       const product = shoppingCart[productIndex];
-      const updatedProduct = { ...product, quantity: product.quantity + 1 };
+      const updatedProduct = {
+        ...product,
+        quantity: product.quantity + newQuantity,
+      };
       setShoppingCart([...firstPart, updatedProduct, ...secondPart]);
     } else {
       setShoppingCart([
         ...shoppingCart,
-        { productId: newProductId, quantity: 1 },
+        { productId: newProductId, quantity: newQuantity },
       ]);
     }
   };

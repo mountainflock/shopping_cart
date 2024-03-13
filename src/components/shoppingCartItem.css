@@ -1,0 +1,15 @@
+.shopping-cart-item {
+  margin: 20px 0;
+}
+
+.shopping-cart-item-title {
+  font-weight: bold;
+}
+
+.delete-product-button {
+  margin: 0 6px;
+}
+
+.material-symbols-rounded {
+  font-size: 18px;
+}

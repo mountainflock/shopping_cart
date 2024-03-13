@@ -1,3 +1,7 @@
+.shop-page {
+  height: 200%;
+}
+
 .card-list {
   display: flex;
   flex-direction: row;
@@ -9,57 +13,4 @@
   display: flex;
   flex-direction: row;
   margin: 6px 0;
-}
-
-.quantity {
-  /* width: 80%; */
-}
-
-.shopping-cart {
-  background-color: rgba(233, 233, 233, 40%);
-  font-family: "Cutive Mono", monospace;
-  padding: 20px;
-  border-radius: 6px;
-  width: 40%;
-}
-
-.shopping-cart-title {
-  font-family: "Be Vietnam Pro", sans-serif;
-}
-
-.checkout-button {
-  background-color: rgba(89, 88, 112, 0.4);
-  color: black;
-  border: none;
-  border-radius: 4px;
-  font-size: 12px;
-  padding: 6px;
-  margin: 4px 0;
-  width: 100%;
-}
-
-.material-symbols-rounded {
-  font-size: 18px;
-}
-
-.total-price-div {
-  font-weight: 700;
-  text-align: left;
-  margin: 20px 0;
-}
-
-.delete-all-button {
-  background-color: black;
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 4px;
-  font-size: 12px;
-  padding: 6px;
-  margin: 4px 0;
-  width: 100%;
-}
-
-.input-plus-button {
-  display: flex;
-  flex-direction: column;
 }
