@@ -9,8 +9,8 @@ const Card = ({ id, title, image, price }) => {
 
   const handleAddToCartButtonClick = (e) => {
     e.preventDefault();
-    const newProductId = { id, title, image, price, quantity: quantity };
-    addProductToShoppingCart(newProductId, quantity);
+    const newProduct = { id, title, image, price, quantity: quantity };
+    addProductToShoppingCart(newProduct, quantity);
   };
 
   const handleIncreaseButtonClick = (e) => {
