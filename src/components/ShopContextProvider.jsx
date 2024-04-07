@@ -20,9 +20,9 @@ export const ShopContextProvider = ({ children }) => {
       });
   }, []);
 
-  const addProductToShoppingCart = (newProductId, newQuantity) => {
+  const addProductToShoppingCart = (newProduct, newQuantity) => {
     const productIndex = shoppingCart.findIndex(
-      ({ productId }) => productId.id === newProductId.id
+      ({ product }) => product.id === newProduct.id
     );
     if (productIndex !== -1) {
       const firstPart = shoppingCart.slice(0, productIndex);
@@ -36,15 +36,13 @@ export const ShopContextProvider = ({ children }) => {
     } else {
       setShoppingCart([
         ...shoppingCart,
-        { productId: newProductId, quantity: newQuantity },
+        { product: newProduct, quantity: newQuantity },
       ]);
     }
   };
 
   const removeProductFromShoppingCart = (id) => {
-    setShoppingCart(
-      shoppingCart.filter((product) => product.productId.id !== id)
-    );
+    setShoppingCart(shoppingCart.filter((item) => item.product.id !== id));
   };
 
   const clearShoppingCart = () => {

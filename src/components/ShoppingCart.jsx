@@ -8,13 +8,13 @@ const ShoppingCart = () => {
   return (
     <div className="shopping-cart">
       <div className="shopping-cart-title">Shopping Cart</div>
-      {shoppingCart.map((product, i) => (
+      {shoppingCart.map((item, i) => (
         <ShoppingCartItem
           key={i}
-          id={product.productId.id}
-          title={product.productId.title}
-          quantity={product.quantity}
-          price={product.productId.price}
+          id={item.product.id}
+          title={item.product.title}
+          quantity={item.quantity}
+          price={item.product.price}
         />
       ))}
 
@@ -22,7 +22,7 @@ const ShoppingCart = () => {
         Total: ${""}
         {shoppingCart.reduce((sum, value) => {
           return parseFloat(
-            (sum + value.productId.price * value.quantity).toFixed(2)
+            (sum + value.product.price * value.quantity).toFixed(2)
           );
         }, 0)}
       </div>
