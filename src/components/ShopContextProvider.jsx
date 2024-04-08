@@ -21,7 +21,8 @@ export const ShopContextProvider = ({ children }) => {
   }, []);
 
   const addProductToShoppingCart = (newProduct, newQuantity) => {
-    if (newQuantity === 0 || isNaN(newQuantity)) return;
+    const parsedQuantity = parseInt(newQuantity);
+    if (parsedQuantity === 0 || isNaN(parsedQuantity)) return;
     const productIndex = shoppingCart.findIndex(
       ({ product }) => product.id === newProduct.id
     );
@@ -31,13 +32,13 @@ export const ShopContextProvider = ({ children }) => {
       const product = shoppingCart[productIndex];
       const updatedProduct = {
         ...product,
-        quantity: product.quantity + newQuantity,
+        quantity: product.quantity + parsedQuantity,
       };
       setShoppingCart([...firstPart, updatedProduct, ...secondPart]);
     } else {
       setShoppingCart([
         ...shoppingCart,
-        { product: newProduct, quantity: newQuantity },
+        { product: newProduct, quantity: parsedQuantity },
       ]);
     }
   };
