@@ -9,28 +9,34 @@ const Card = ({ id, title, image, price }) => {
 
   const handleAddToCartButtonClick = (e) => {
     e.preventDefault();
-    const newProduct = { id, title, image, price, quantity: quantity };
+    const newProduct = { id, title, image, price, quantity };
     addProductToShoppingCart(newProduct, quantity);
   };
 
   const handleIncreaseButtonClick = (e) => {
     e.preventDefault();
-    if (isNaN(quantity)) {
+    const parsedQuantity = parseInt(quantity);
+    if (isNaN(parsedQuantity)) {
       setQuantity(1);
-      console.log(quantity);
+    } else {
+      setQuantity(parsedQuantity + 1);
     }
-    setQuantity(quantity + 1);
   };
 
   const handleDecreaseButtonClick = (e) => {
     e.preventDefault();
-    if (quantity === 1) return;
-    setQuantity(quantity - 1);
+    const parsedQuantity = parseInt(quantity);
+    if (isNaN(parsedQuantity)) {
+      setQuantity(1);
+    } else if (parsedQuantity === 1) {
+      return;
+    } else {
+      setQuantity(parsedQuantity - 1);
+    }
   };
 
   const handleQuantityChange = (e) => {
-    if (isNaN(e.target.value)) setQuantity(0);
-    setQuantity(parseInt(e.target.value));
+    setQuantity(e.target.value);
   };
 
   return (
