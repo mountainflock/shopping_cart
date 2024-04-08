@@ -21,6 +21,7 @@ export const ShopContextProvider = ({ children }) => {
   }, []);
 
   const addProductToShoppingCart = (newProduct, newQuantity) => {
+    if (newQuantity === 0 || isNaN(newQuantity)) return;
     const productIndex = shoppingCart.findIndex(
       ({ product }) => product.id === newProduct.id
     );
