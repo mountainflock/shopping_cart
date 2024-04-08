@@ -15,6 +15,10 @@ const Card = ({ id, title, image, price }) => {
 
   const handleIncreaseButtonClick = (e) => {
     e.preventDefault();
+    if (isNaN(quantity)) {
+      setQuantity(1);
+      console.log(quantity);
+    }
     setQuantity(quantity + 1);
   };
 
@@ -25,6 +29,7 @@ const Card = ({ id, title, image, price }) => {
   };
 
   const handleQuantityChange = (e) => {
+    if (isNaN(e.target.value)) setQuantity(0);
     setQuantity(parseInt(e.target.value));
   };
 
