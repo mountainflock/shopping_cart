@@ -29,7 +29,9 @@ const ShoppingCart = () => {
       <button className="delete-all-button" onClick={clearShoppingCart}>
         DELETE ALL
       </button>
-      <button className="checkout-button">Checkout</button>
+      <button className="checkout-button" disabled={true}>
+        Checkout
+      </button>
     </div>
   );
 };

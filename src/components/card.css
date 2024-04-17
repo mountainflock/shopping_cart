@@ -1,22 +1,17 @@
-.card-list {
-  display: flex;
-  flex-direction: row;
-  margin: 60px 40px;
-  height: 40vh;
-}
-
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
   font-family: "Cutive Mono", monospace;
-  height: 400px;
-  padding: 20px;
-  gap: 10px;
+  height: 480px;
+  width: 18%;
+  /* gap: 2vh; */
 }
 
 .image-div {
   display: flex;
+  flex: none;
   justify-content: center;
   align-items: center;
   height: 40%;
@@ -26,47 +21,40 @@
   width: 30%;
 }
 
-.card-image:hover {
-  width: 35%;
-}
-
 .card-title {
   text-wrap: wrap;
-  margin: 20px 0;
+  text-align: center;
+  height: 20%;
 }
 
 .price-div {
   display: flex;
   justify-content: center;
-  height: 10%;
-}
-
-.quantity-form {
   height: 20%;
 }
 
-.form-div {
+.quantity-input-div {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  gap: 5px;
+  align-self: center;
+  height: 10%;
 }
 
 .quantity {
   appearance: textfield;
   width: 20px;
   text-align: center;
-  /* border: none; */
-}
-
-.quantity-input {
-  align-self: center;
 }
 
 .quantity::-webkit-inner-spin-button,
 .quantity::-webkit-outer-spin-button {
   appearance: none;
+}
+
+.add-to-cart-button-div {
+  height: 10%;
+  width: 100%;
 }
 
 .add-to-cart-button {
@@ -76,12 +64,21 @@
   border-radius: 4px;
   font-size: 12px;
   padding: 6px;
-  margin: 10px 0;
+  width: 100%;
+}
+
+.add-to-cart-button-disabled {
+  background-color: rgb(220, 220, 220);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 6px;
   width: 100%;
 }
 
 .add-to-cart-button:hover {
-  background-color: rgb(206, 206, 206);
+  background-color: rgb(161, 206, 203);
   color: black;
 }
 
