@@ -46,7 +46,7 @@ const Card = ({ id, title, image, price }) => {
       </div>
       <div className="card-title">{title}</div>
       <div className="price-div">${price}</div>
-      <div className="input-plus-button">
+      <div className="quantity-input-div">
         <ProductInput
           id={id}
           quantity={quantity}
@@ -54,14 +54,25 @@ const Card = ({ id, title, image, price }) => {
           handleDecreaseButtonClick={handleDecreaseButtonClick}
           handleQuantityChange={handleQuantityChange}
         />
-        <div>
+      </div>
+      <div className="add-to-cart-button-div">
+        {quantity < 1 ? (
           <button
-            className="add-to-cart-button"
+            className="add-to-cart-button-disabled"
             onClick={handleAddToCartButtonClick}
+            disabled={true}
           >
             ADD TO CART
           </button>
-        </div>
+        ) : (
+          <button
+            className="add-to-cart-button"
+            onClick={handleAddToCartButtonClick}
+            disabled={false}
+          >
+            ADD TO CART
+          </button>
+        )}
       </div>
     </div>
   );

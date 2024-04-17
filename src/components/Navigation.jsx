@@ -4,14 +4,14 @@ import { useNavigate } from "react-router-dom";
 const Navigation = () => {
   return (
     <nav className="navigation">
-      <ul className="navigation-bar">
-        <li className="navigation-item">
+      <div className="navigation-bar">
+        <div className="navigation-item">
           <NavigationButton name="Home" path="/" />
-        </li>
-        <li className="navigation-item">
+        </div>
+        <div className="navigation-item">
           <NavigationButton name="Shop" path="/ShopPage" />
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
   );
 };
@@ -22,9 +22,9 @@ const NavigationButton = ({ name, path }) => {
     navigate(path);
   }
   return (
-    <button onClick={handleClick} className="navigation-item">
+    <a href="" onClick={handleClick} className="navigation-item">
       {name}
-    </button>
+    </a>
   );
 };
 

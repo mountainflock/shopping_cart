@@ -2,6 +2,10 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navigation {
   background-color: rgb(244, 244, 244);
 }
@@ -14,11 +18,15 @@ ul {
 }
 
 .navigation-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   height: 100%;
   border: none;
   background-color: inherit;
   color: black;
+  text-align: center;
   font-size: 20px;
   font-weight: 100px;
   font-family: "Be Vietnam Pro", sans-serif;
@@ -26,7 +34,7 @@ ul {
 
 .navigation-item:hover {
   color: rgb(107, 107, 107);
-  /* font-size: 24px; */
+  font-size: 24px;
 }
 
 .material-symbols-outlined {

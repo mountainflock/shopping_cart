@@ -3,12 +3,14 @@ p {
 }
 
 .shopping-cart {
+  align-self: baseline;
   background-color: rgba(233, 233, 233, 40%);
   font-family: "Cutive Mono", monospace;
-  padding: 20px;
+  padding: 2%;
   border-radius: 6px;
-  width: 100%;
-  max-height: 120%;
+  width: 50vh;
+  height: fit-content;
+  max-height: 73vh;
   overflow-y: auto;
 }
 
@@ -17,8 +19,8 @@ p {
 }
 
 .checkout-button {
-  background-color: rgba(89, 88, 112, 0.4);
-  color: black;
+  background-color: rgb(220, 220, 220);
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 4px;
   font-size: 14px;
@@ -49,4 +51,9 @@ p {
 .input-plus-button {
   display: flex;
   flex-direction: column;
+}
+
+.delete-all-button:hover {
+  background-color: rgb(230, 141, 117);
+  color: black;
 }
