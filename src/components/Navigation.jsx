@@ -2,8 +2,18 @@ import "./navigation.css";
 import { useNavigate } from "react-router-dom";
 
 const Navigation = () => {
+  const navigate = useNavigate();
+  function handleClick() {
+    navigate("/");
+  }
   return (
     <nav className="navigation">
+      <div className="logo-div">
+        <a href="" className="logo-text" onClick={handleClick}>
+          BASE{" "}
+        </a>
+        <div className="home-text">plain jewelery</div>
+      </div>
       <div className="navigation-bar">
         <div className="navigation-item">
           <NavigationButton name="Home" path="/" />

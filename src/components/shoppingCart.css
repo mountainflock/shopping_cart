@@ -10,8 +10,15 @@ p {
   border-radius: 6px;
   width: 50vh;
   height: fit-content;
-  max-height: 73vh;
+  max-height: 60vh;
   overflow-y: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .shopping-cart {
+    width: 80%;
+    align-self: center;
+  }
 }
 
 .shopping-cart-title {
