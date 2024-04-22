@@ -6,7 +6,6 @@
   font-family: "Cutive Mono", monospace;
   height: 480px;
   width: 18%;
-  /* gap: 2vh; */
 }
 
 .image-div {
@@ -25,6 +24,7 @@
   text-wrap: wrap;
   text-align: center;
   height: 20%;
+  text-overflow: ellipsis;
 }
 
 .price-div {
@@ -93,4 +93,22 @@
 .increase-button:hover,
 .decrease-button:hover {
   background-color: rgb(233, 230, 230);
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    width: 80%;
+  }
+
+  .card-title {
+    height: 15%;
+  }
+
+  .price-div {
+    height: 5%;
+  }
+
+  .add-to-cart-button-div {
+    height: 7%;
+  }
 }

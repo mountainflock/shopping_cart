@@ -1,3 +1,9 @@
+@media only screen and (max-width: 480px) {
+  .navigation-bar {
+    width: 400px;
+  }
+}
+
 ul {
   list-style-type: none;
 }
@@ -10,33 +16,47 @@ a {
   background-color: rgb(244, 244, 244);
 }
 
+.logo-div {
+  padding-top: 10px;
+}
+
+.logo-text {
+  font-size: 32px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: rgb(79, 79, 79);
+  padding: 10px 0 0 10px;
+}
+
+.home-text {
+  font-size: 20px;
+  font-family: "Cutive Mono", monospace;
+  color: rgb(132, 132, 132);
+  padding: 0 0 0 10px;
+}
+
 .navigation-bar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  height: 80px;
+  justify-content: center;
+  padding: 1% 0;
+  height: 15%;
 }
 
 .navigation-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 70px;
   height: 100%;
   border: none;
   background-color: inherit;
   color: black;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 100px;
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .navigation-item:hover {
-  color: rgb(107, 107, 107);
-  font-size: 24px;
-}
-
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  color: rgb(188, 188, 188);
 }
