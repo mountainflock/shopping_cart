@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import "./card.css";
-import ProductInput from "./ProductInput";
-import { ShopContext } from "./ShopContextProvider";
+import ProductInput from "../productInput/ProductInput";
+import { ShopContext } from "../../components/shopContextProvider/ShopContextProvider";
 
 const Card = ({ id, title, image, price }) => {
   const { addProductToShoppingCart } = useContext(ShopContext);

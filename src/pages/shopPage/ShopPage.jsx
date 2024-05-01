@@ -1,6 +1,6 @@
 import "./shopPage.css";
-import { ShopContextProvider } from "../components/ShopContextProvider";
-import CardList from "../components/CardList";
+import { ShopContextProvider } from "../../components/shopContextProvider/ShopContextProvider";
+import CardList from "../../components/cardList/CardList";
 
 const ShopPage = () => {
   return (

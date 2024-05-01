@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { ShopContext } from "./ShopContextProvider";
-import ShoppingCartItem from "./ShoppingCartItem";
+import { ShopContext } from "../shopContextProvider/ShopContextProvider";
+import ShoppingCartItem from "../shoppingCartItem/ShoppingCartItem";
 import "./shoppingCart.css";
 
 const ShoppingCart = () => {
