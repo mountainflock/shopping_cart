@@ -9,20 +9,18 @@ a {
   flex-direction: column;
 }
 
-.main-image {
-  width: 100vw;
-  height: 90vh;
-}
-
 .home-image-div {
   max-width: 100vw;
+}
+
+.main-image {
+  object-fit: cover;
+  width: 100vw;
+  height: 90vh;
 }
 
 @media only screen and (max-width: 480px) {
   .main-image {
     object-fit: cover;
-  }
-
-  .home {
   }
 }

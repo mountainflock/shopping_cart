@@ -1,15 +1,15 @@
-import "./navigation.css";
 import { useNavigate } from "react-router-dom";
+import "./navigation.css";
 
 const Navigation = () => {
   const navigate = useNavigate();
-  function handleClick() {
+  function handleHomeButtonClick() {
     navigate("/");
   }
   return (
     <nav className="navigation">
       <div className="logo-div">
-        <a href="" className="logo-text" onClick={handleClick}>
+        <a href="" className="logo-text" onClick={handleHomeButtonClick}>
           BASE{" "}
         </a>
         <div className="home-text">plain jewelery</div>
@@ -28,11 +28,15 @@ const Navigation = () => {
 
 const NavigationButton = ({ name, path }) => {
   const navigate = useNavigate();
-  function handleClick() {
+  function handleNavigationButtonClick() {
     navigate(path);
   }
   return (
-    <a href="" onClick={handleClick} className="navigation-item">
+    <a
+      href=""
+      onClick={handleNavigationButtonClick}
+      className="navigation-link"
+    >
       {name}
     </a>
   );

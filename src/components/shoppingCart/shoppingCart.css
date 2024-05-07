@@ -3,15 +3,51 @@ p {
 }
 
 .shopping-cart {
-  align-self: baseline;
-  background-color: rgba(233, 233, 233, 40%);
+  align-self: center;
   font-family: "Cutive Mono", monospace;
-  padding: 2%;
+  background-color: rgba(233, 233, 233, 40%);
   border-radius: 6px;
-  width: 50vh;
+  overflow-y: auto;
   height: fit-content;
   max-height: 60vh;
-  overflow-y: auto;
+  width: 50vh;
+  padding: 3%;
+}
+
+.shopping-cart-title {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.total-price-div {
+  border-top: 1px solid black;
+  text-align: left;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.delete-all-button,
+.checkout-button {
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  padding: 6px;
+  margin: 4px 0;
+}
+
+.delete-all-button {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+}
+
+.delete-all-button:hover {
+  background-color: rgb(230, 141, 117);
+  color: black;
+}
+
+.checkout-button {
+  background-color: rgb(220, 220, 220);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -19,48 +55,4 @@ p {
     width: 80%;
     align-self: center;
   }
-}
-
-.shopping-cart-title {
-  font-family: "Be Vietnam Pro", sans-serif;
-}
-
-.checkout-button {
-  background-color: rgb(220, 220, 220);
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 4px;
-  font-size: 14px;
-  padding: 6px;
-  margin: 4px 0;
-  width: 100%;
-}
-
-.total-price-div {
-  font-weight: 700;
-  text-align: left;
-  margin: 20px 0;
-  padding-top: 10px;
-  border-top: 1px solid black;
-}
-
-.delete-all-button {
-  background-color: black;
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 4px;
-  font-size: 12px;
-  padding: 6px;
-  margin: 4px 0;
-  width: 100%;
-}
-
-.input-plus-button {
-  display: flex;
-  flex-direction: column;
-}
-
-.delete-all-button:hover {
-  background-color: rgb(230, 141, 117);
-  color: black;
 }
