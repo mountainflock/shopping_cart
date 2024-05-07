@@ -22,10 +22,13 @@ export const ShopContextProvider = ({ children }) => {
 
   const addProductToShoppingCart = (newProduct, newQuantity) => {
     const parsedQuantity = parseInt(newQuantity);
+
     if (parsedQuantity === 0 || isNaN(parsedQuantity)) return;
+
     const productIndex = shoppingCart.findIndex(
       ({ product }) => product.id === newProduct.id
     );
+
     if (productIndex !== -1) {
       const firstPart = shoppingCart.slice(0, productIndex);
       const secondPart = shoppingCart.slice(productIndex + 1);

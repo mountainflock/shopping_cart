@@ -1,0 +1,17 @@
+.quantity {
+  text-align: center;
+  width: 20px;
+}
+
+.increase-button,
+.decrease-button {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 2px;
+  margin: 0 2px;
+}
+
+.increase-button:hover,
+.decrease-button:hover {
+  background-color: rgb(233, 230, 230);
+}

@@ -1,3 +1,5 @@
+import "./productInput.css";
+
 const ProductInput = ({
   quantity,
   handleDecreaseButtonClick,
@@ -5,7 +7,7 @@ const ProductInput = ({
   handleQuantityChange,
 }) => {
   return (
-    <div className="quantity-input">
+    <div>
       <button className="decrease-button" onClick={handleDecreaseButtonClick}>
         -
       </button>

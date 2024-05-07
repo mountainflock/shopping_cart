@@ -16,19 +16,19 @@
   height: 40%;
 }
 
-.card-image {
+.product-image {
   width: 30%;
 }
 
-.card-title {
+.product-title {
   text-wrap: wrap;
   text-align: center;
-  height: 20%;
-  text-overflow: ellipsis;
+  overflow: hidden;
   margin-top: 4%;
+  height: 20%;
 }
 
-.price-div {
+.product-price {
   display: flex;
   justify-content: center;
   height: 20%;
@@ -36,16 +36,9 @@
 
 .quantity-input-div {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-self: center;
   height: 10%;
-}
-
-.quantity {
-  appearance: textfield;
-  width: 20px;
-  text-align: center;
 }
 
 .quantity::-webkit-inner-spin-button,
@@ -58,24 +51,21 @@
   width: 100%;
 }
 
-.add-to-cart-button {
-  background-color: rgb(34, 34, 34);
+.add-to-cart-button,
+.add-to-cart-button-disabled {
   color: rgb(255, 255, 255);
+  font-size: 12px;
   border: none;
   border-radius: 4px;
-  font-size: 12px;
   padding: 6px;
   width: 100%;
+}
+.add-to-cart-button {
+  background-color: rgb(34, 34, 34);
 }
 
 .add-to-cart-button-disabled {
   background-color: rgb(220, 220, 220);
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 4px;
-  font-size: 12px;
-  padding: 6px;
-  width: 100%;
 }
 
 .add-to-cart-button:hover {
@@ -83,29 +73,16 @@
   color: black;
 }
 
-.increase-button,
-.decrease-button {
-  border: none;
-  background-color: rgb(255, 255, 255);
-  border-radius: 2px;
-  margin: 0 2px;
-}
-
-.increase-button:hover,
-.decrease-button:hover {
-  background-color: rgb(233, 230, 230);
-}
-
 @media only screen and (max-width: 480px) {
   .card {
-    width: 80%;
+    width: 70%;
   }
 
-  .card-title {
+  .product-title {
     height: 15%;
   }
 
-  .price-div {
+  .product-price {
     height: 5%;
   }
 

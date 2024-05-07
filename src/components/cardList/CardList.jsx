@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { ShopContext } from "../shopContextProvider/ShopContextProvider";
 import Card from "../../components/card/Card";
 import ShoppingCart from "../../components/shoppingCart/ShoppingCart";
+import "./cardList.css";
 
 const CardList = () => {
   const { products, shoppingCart } = useContext(ShopContext);

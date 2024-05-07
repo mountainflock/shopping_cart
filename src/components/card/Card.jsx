@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
-import "./card.css";
-import ProductInput from "../productInput/ProductInput";
 import { ShopContext } from "../../components/shopContextProvider/ShopContextProvider";
+import ProductInput from "../productInput/ProductInput";
+import "./card.css";
 
 const Card = ({ id, title, image, price }) => {
   const { addProductToShoppingCart } = useContext(ShopContext);
@@ -42,10 +42,10 @@ const Card = ({ id, title, image, price }) => {
   return (
     <div className="card">
       <div className="image-div">
-        <img src={image} alt="product image" className="card-image" />
+        <img src={image} alt="product image" className="product-image" />
       </div>
-      <div className="card-title">{title}</div>
-      <div className="price-div">${price}</div>
+      <div className="product-title">{title}</div>
+      <div className="product-price">${price}</div>
       <div className="quantity-input-div">
         <ProductInput
           id={id}

@@ -1,6 +1,6 @@
-import "./home.css";
-import mainPic from "../../assets/mainPic.jpg";
 import { useNavigate } from "react-router-dom";
+import mainPic from "../../assets/mainPic.jpg";
+import "./home.css";
 
 const Home = () => {
   const navigate = useNavigate();
