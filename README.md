@@ -2,7 +2,7 @@
 
 This project is a part of the [Odin](https://www.theodinproject.com/paths/full-stack-javascript) course on ReactJS as a final [task](https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart) for React Router topic.
 
-Live version of the project can be found [here](mountaiflockshoppingcart.netlify.app). 
+Live version of the project can be found [here](https://mountaiflockshoppingcart.netlify.app/ShopPage). 
 
 ![screenshot cart](./src/assets/screenshotCart.png)
 
