@@ -1,14 +1,14 @@
 # Shopping Cart
 
-This project is a part of the [Odin](https://www.theodinproject.com/paths/full-stack-javascript) course on ReactJS as a final [task](https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart) for React Router topic.
+This project is a part of the [Odin](https://www.theodinproject.com/paths/full-stack-javascript) course on React as a final [task](https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart) for React Router topic.
 
 **Live version of the project can be found [here](https://mountaiflockshoppingcart.netlify.app/ShopPage).**
 
 ![screenshot cart](./src/assets/screenshotCart.png)
 
-This is an online jewerly shop simulator which includes Home Page, Navigation panel, Shop page and Shopping cart. The products of the shop are fetched from the [FreeAPI.com](https://fakestoreapi.com/docs). 
+This is an online jewerly shop simulator which includes Home Page, Navigation panel, Shop page and Shopping cart. The products of the shop are fetched from the [fakestoreapi.com](https://fakestoreapi.com/docs). 
 
-The products can be added to the cart in any quantity regulated manually or by increment/decrement buttons. They also can be deleted from the shopping cart one by one or the shopping cart can be emptied wholly.
+The products can be added to the cart in any quantity adjusted manually or by increment/decrement buttons. They also can be deleted from the shopping cart one by one or the shopping cart can be emptied wholly.
 
 The site is adaptive for mobile devices.
 
@@ -19,7 +19,7 @@ Clone this project:
 git clone git@github.com:mountainflock/shopping_cart.git
 ```
 
-Install npm: 
+Install depenpencies: 
 ```sh 
 npm install
 ```
@@ -29,7 +29,7 @@ For project preview run:
 npm run preview
 ```
 
-Hit the local host in browser: 
+Local host: 
 ```sh 
 http://localhost:4173/
 ```

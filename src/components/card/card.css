@@ -44,6 +44,7 @@
 .quantity::-webkit-inner-spin-button,
 .quantity::-webkit-outer-spin-button {
   appearance: none;
+  -moz-appearance: textfield;
 }
 
 .add-to-cart-button-div {
