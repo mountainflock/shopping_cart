@@ -1,6 +1,6 @@
 # Shopping Cart
 
-This project is a part of the [Odin](https://www.theodinproject.com/paths/full-stack-javascript) course on React as a final [task](https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart) for React Router topic.
+This project is a part of the [Odin](https://www.theodinproject.com) course on React as a final [task](https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart) for React topic.
 
 **Live version of the project can be found [here](https://mountaiflockshoppingcart.netlify.app/ShopPage).**
 
@@ -13,11 +13,6 @@ The products can be added to the cart in any quantity adjusted manually or by in
 The site is adaptive for mobile devices.
 
 ## To run the project locally:
-
-Clone this project:
-```sh 
-git clone git@github.com:mountainflock/shopping_cart.git
-```
 
 Install depenpencies: 
 ```sh 
